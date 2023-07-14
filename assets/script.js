@@ -1,18 +1,61 @@
-// var to store API key obtained from the openweathermap website
-var weatherApiKey = "c0b347e4a7b9bf21c4df80d8171f4087" 
-//var to store API URL with query parameters concatenated (latitude, longitude, var weatherApiKey)
-var weatherApi = "https://www.api.openweathermap.org/data/2.5/forecast?lat="+{lat}+"&lon="+{lon}+"&appid="+weatherApiKey  
-// fetch to test the API key
-fetch(weatherApi)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(data){
-        console.log(data);
-    })
+var searchButton = document.getElementById("search-button")
+function displayWeather(){
+        // var to store API key obtained from the openweathermap website
+        var weatherApiKey = "c0b347e4a7b9bf21c4df80d8171f4087" 
+        var formSearch = document.getElementById("form-search");
+        //var to store API URL with query parameters concatenated (latitude, longitude, var weatherApiKey)
+        var weatherApi = "https://api.openweathermap.org/data/2.5/weather?q="+formSearch.value+"&appid="+weatherApiKey+"&units=imperial"  
+        // variable empty array to be filled with the desired city
+        var cities = []
+
+        var forecastApi = "https://api.openweathermap.org/data/2.5/forecast?q="+formSearch.value+"&appid="+weatherApiKey+"&units=imperial"
+        
+
+        // fetch to test the API key with the current day weather
+        fetch(weatherApi)
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(data){
+                console.log(data);
+                var selectedCity = document.getElementById("selected-city")
+                selectedCity.textContent = "Selected city: " + data.name
+                var currentDate = document.getElementById("current-date")
+                currentDate.textContent = dayjs.unix(data.dt).format("MM/DD/YYYY")
+                var currentTemp = document.getElementById("current-temp")
+                currentTemp.textContent = "Temp: " + data.main.temp + "°F"
+                var currentWind = document.getElementById("current-wind")
+                currentWind.textContent = "Wind: " + data.wind.speed + " MPH"
+                var currentHumidity = document.getElementById("current-humidity")
+                currentHumidity.textContent = "Humidity: " + data.main.humidity + "%"
+                var currentSymbol = document.getElementById("current-symbol")
+                currentSymbol.src= "https://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png"
+
+        })
+        
+        // fetch to test the API key with the 5 day forecast
+        fetch(forecastApi)
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(data){
+                console.log(data);
+        var futureDate = document.querySelectorAll(".date")
+        for (var i=2, j=0; i<data.list.length; i=i+8, j++) {
+                console.log(data.list[i])
+                var forecastData = data.list[i]
+                futureDate[j].textContent= dayjs.unix(forecastData.dt).format("MM/DD/YYYY")
+
+        }
+            })
 
 
 
+
+
+}
+
+searchButton.addEventListener("click", displayWeather)
 
 
 

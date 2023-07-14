@@ -5,25 +5,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- linked reset.css file -->
+    <link rel="stylesheet" href="./assets/reset.css">
+    <!-- changed title -->
+    <title>Weather Dashboard</title>
+    <!-- linking bootstrap framework -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-<!-- 
-    1) header of the page
 
-    2) column 1 - side menu
-        form - title "search for a city", input field, search button
-        div/section etc: append search info from input field above
-                list of buttons for previously searched cities - have a div for placing our search history
-        div/container: can add classes for spacing. create multiple divs to allow for content to be appended tp 
-    3) column 2 - container with 2 children:
-        box to display current live weather of one city and date (empoty div = to add info)
-        section for the 5 day forecast (empty div = to add info)
--->
+    <!-- Added header title and styled with bootstrap -->
+    <div class=".container">
+        <header class="py-5 mb-4 text-center" style="background: linear-gradient(to right, #a2bce4, #31019f);">
+          <h1 class="text-white">Weather Dashboard</h1>
+        </header>
+    </div>
+    
+    
+    
+    <!-- Side menu form -->
+    <div>
+        <!-- title "search for a city" with a form for the user to input the desired city and search button -->
+        <div class="w-25 p-3">
+            <h2>Search for a City:</h2>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="form-search" placeholder="Ex: type 'New York'" aria-label="Ex: type 'New York'" aria-describedby="button-addon2">
+                <button class="btn btn-secondary" type="button" id="search-button">Search</button>
+            </div>
+        </div>
+        
+        <!-- List of buttons with previously searched cities, linked to the forecast of that city
+            div/section etc: append search info from input field above 
+            div/container: can add classes for spacing. create multiple divs to allow for content to be appended tp 
+        -->
+        <div>
+            <button type="button" class="btn btn-outline-dark">Search History 1</button>
+            <br>
+            <button type="button" class="btn btn-outline-dark">Search History 2</button>
+            <br>
+            <button type="button" class="btn btn-outline-dark">Search History 3</button>
+            <br>
+            <button type="button" class="btn btn-outline-dark">Search History 4</button>
+            <br>
+            <button type="button" class="btn btn-outline-dark">Search History 5</button>
+            <br>
+            <button type="button" class="btn btn-outline-dark">Search History 6</button>
+            <br>
+            <button type="button" class="btn btn-outline-dark">Search History 7</button>
+            <br>
+            <button type="button" class="btn btn-outline-dark">Search History 8</button>
+            
+            
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-<!-- Linked Javascript file to html -->
-<script src="./assets/script.js"></script>
+        <!-- 
+            3) column 2 - container with 2 children:
+            box to display current live weather of one city and date (empty div = to add info)
+            section for the 5 day forecast (empty div = to add info)
+        -->
+        
+        <!-- add to today's forecast: date, image symbol of the weather, list with temp, wind and humidity -->
+        <h2 id="selected-city">SelectedCity</h2>
+            <h4 id="current-date"></h4>
+            <img id="current-symbol"/>
+            <ul class="list-group">
+                <li class="list-group-item" id="current-temp">"Temp: " + varTemp + "°F"</li>
+                <li class="list-group-item" id="current-wind">"Wind: " + varWind + "MPH"</li>
+                <li class="list-group-item" id="current-humidity">"Humidity: " + varHumidity + "%"</li>
+            </ul>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <!-- add to the 5-day forecast: date, image symbol of the weather, list with temp, wind and humidity -->
+            <h3>5-Day Forecast:</h3>
+            
+        <h4 class="date"></h4>
+        <image>add symbol of the current weather here</image>
+        <ul class="list-group">
+            <li class="list-group-item">"Temp: " + varTemp + "°F"</li>
+            <li class="list-group-item">"Wind: " + varWind + "MPH"</li>
+            <li class="list-group-item">"Humidity: " + varHumidity + "%"</li>
+        </ul>
+
+        <h4 class="date"></h4>
+        <image>add symbol of the current weather here</image>
+        <ul class="list-group">
+            <li class="list-group-item">"Temp: " + varTemp + "°F"</li>
+            <li class="list-group-item">"Wind: " + varWind + "MPH"</li>
+            <li class="list-group-item">"Humidity: " + varHumidity + "%"</li>
+        </ul>
+        
+        <h4 class="date"></h4>
+        <image>add symbol of the current weather here</image>
+        <ul class="list-group">
+            <li class="list-group-item">"Temp: " + varTemp + "°F"</li>
+            <li class="list-group-item">"Wind: " + varWind + "MPH"</li>
+            <li class="list-group-item">"Humidity: " + varHumidity + "%"</li>
+        </ul>
+        
+        <h4 class="date"></h4>
+        <image>add symbol of the current weather here</image>
+        <ul class="list-group">
+            <li class="list-group-item">"Temp: " + varTemp + "°F"</li>
+            <li class="list-group-item">"Wind: " + varWind + "MPH"</li>
+            <li class="list-group-item">"Humidity: " + varHumidity + "%"</li>
+        </ul>
+        
+        <h4 class="date"></h4>
+        <image>add symbol of the current weather here</image>
+        <ul class="list-group">
+            <li class="list-group-item">"Temp: " + varTemp + "°F"</li>
+            <li class="list-group-item">"Wind: " + varWind + "MPH"</li>
+            <li class="list-group-item">"Humidity: " + varHumidity + "%"</li>
+        </ul>
+
+
+        
+        
+    </div>
+    
+    
+    <!-- linked bootstrap framework -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.9/dayjs.min.js" integrity="sha512-q4Xn+ZU2K+dqJPL8a3TiyGsDa31IkR/rLt/w+fy8jLrx8TdXj0dLM1Aq4aPXnOOKxHEya/bD9DePDB2DHm4jJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Linked Javascript file to html -->
+    <script src="./assets/script.js"></script>
 </body>
+
 </html>
 
 
