@@ -40,12 +40,20 @@ function displayWeather(){
             })
             .then(function(data){
                 console.log(data);
-        var futureDate = document.querySelectorAll(".date")
+        var forecastDate = document.querySelectorAll(".date")
+        var forecastTemp = document.querySelectorAll(".forecast-temp")
+        var forecastWind = document.querySelectorAll(".forecast-wind")
+        var forecastHumidity = document.querySelectorAll(".forecast-humidity")
+        var forecastSymbol = document.querySelectorAll("#forecast-symbol")
+
         for (var i=2, j=0; i<data.list.length; i=i+8, j++) {
                 console.log(data.list[i])
                 var forecastData = data.list[i]
-                futureDate[j].textContent= dayjs.unix(forecastData.dt).format("MM/DD/YYYY")
-
+                forecastDate[j].textContent= dayjs.unix(forecastData.dt).format("MM/DD/YYYY")
+                forecastTemp[j].textContent = "Temp: " + forecastData.main.temp + "°F"
+                forecastWind[j].textContent = "Wind: " + forecastData.wind.speed + " MPH"
+                forecastHumidity[j].textContent = "Humidity: " + forecastData.main.humidity + "%"
+                forecastSymbol[j].src= "https://openweathermap.org/img/wn/"+forecastData.weather[0].icon+"@2x.png"
         }
             })
 
