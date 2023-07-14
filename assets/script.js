@@ -1,3 +1,35 @@
+// var to store API key obtained from the openweathermap website
+var weatherApiKey = "c0b347e4a7b9bf21c4df80d8171f4087" 
+//var to store API URL with query parameters concatenated (latitude, longitude, var weatherApiKey)
+var weatherApi = "https://www.api.openweathermap.org/data/2.5/forecast?lat="+{lat}+"&lon="+{lon}+"&appid="+weatherApiKey  
+// fetch to test the API key
+fetch(weatherApi)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        console.log(data);
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* PSEUDOCODING
 
 Create a weather dashboard with a 5-day forecast
