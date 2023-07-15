@@ -19,7 +19,7 @@ function displayWeather(){
             .then(function(data){
                 console.log(data);
                 var selectedCity = document.getElementById("selected-city")
-                selectedCity.textContent = "Selected city: " + data.name
+                selectedCity.textContent = "Today in: " + data.name
                 var currentDate = document.getElementById("current-date")
                 currentDate.textContent = dayjs.unix(data.dt).format("MM/DD/YYYY")
                 var currentTemp = document.getElementById("current-temp")
