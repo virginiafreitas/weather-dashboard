@@ -1,5 +1,4 @@
 # weather-dashboard
-# notes just for reference, retrieved from previous assignment
 
 ## Description
 
