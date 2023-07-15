@@ -2,14 +2,13 @@
 # notes just for reference, retrieved from previous assignment
 
 ## Description
-    
 
-<!-- The objective of this project was to develop a user-friendly calendar application that enables users to save and delete events for every business hour of the day. The application utilizes jQuery to dynamically update the HTML and CSS, allowing the current date to be displayed prominently, while also changing the column colors based on the time of day. My personal goal on this project was to learn how to use jQuery and day.js libraries effectively and to gain proficiency in storing data on local storage, as well as to enhance my JavaScript skills. -->
 
+The objective of this project was to enhance my skills in JavaScript, Bootstrap, APIs, and local storage. The goal of this project was to develop an intuitive application that allows users to search for any city and instantly retrieve the current weather conditions, along with a comprehensive 5-day weather forecast. With a focus on creating a user-friendly interface, the application will provide a seamless experience for users, enabling them to easily access and interpret weather information such as temperature, wind speed and humidity, in a visually appealing manner. By combining the power of JavaScript, Bootstrap's responsive design, and APIs for weather data retrieval, I have gained valuable hands-on experience in web development while delivering a practical and engaging application for users to stay informed about the weather.
 
 ## Installation
 
-
+<!-- IN PROGRESS -->
 <!-- 1. HTML and CSS files were provided.
 2. Created the Javascript file.
 3. Created new time-blocks on html to replicate existing hours 9am, 10am and 11am through 5pm.
@@ -35,6 +34,7 @@
 
 
 1. Open the following URL in the browser: https://virginiafreitas.github.io/weather-dashboard/
+<!-- IN PROGRESS -->
 <!-- 2. See that the third line of the header will be displaying the current date as MM-DD-YYYY.
 3. Choose one time of the day, between 9am and 5pm, to add new activities or remove existing activities.
 4. Activities can be typed inside the text area to the right side of the column with the hours of the day.
