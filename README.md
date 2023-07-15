@@ -7,26 +7,30 @@ The objective of this project was to enhance my skills in JavaScript, Bootstrap,
 
 ## Installation
 
-<!-- IN PROGRESS -->
-<!-- 1. HTML and CSS files were provided.
-2. Created the Javascript file.
-3. Created new time-blocks on html to replicate existing hours 9am, 10am and 11am through 5pm.
-4. Used jquery to select the time-block class.
-5. Used dayjs() to grab current hour and convert it to integer.
-6. Used for loop for iterating all the time blocks(i) comparing to current hour.
-7. Applied the past, present, or future class to each time block by comparing the time block to the current hour in an if statement.
-8. Removed the existing class "pass" from the element of that id attribute in the html.
-9. Added the class "present" from the element of that id attribute in the html.
-10. Used dayjs to display the current date in the header of the page.
-11. Saved user input in the local storage.
-12. Added a listener for click events on the save button. 
-13. Used "this" to refer to the class "saveBtn".
-14. Used setItem() to add key (ex: hour-10) and value input (description) to the localStorage.
-15. Retrieved values saved on the localStorage and display on the textarea elements.
-16. Ran a function in the specified time-block class
-17. Figured out what hour block id you're in by using $(this) and the id attribute of each time-block.
-18. Used getItem for localStorage to pull previously stored content.
-19. Checked on localStorage if there is storage and display the items (value) inside the text area of corresponding hour. -->
+1. Created an html from scratch with a header, a side menu and a container
+2. Created a reset.css file and linked it to HTML
+3. Created a Javascript file and linked to HTML
+4. Linked the Bootstrap framework to HTML
+5. Created a title for the document on HTML
+6. Added a header title and styled with bootstrap on HTML
+7. Created a container box to wrap the side form on the left and the weather forecasts on the right, both in the same row, using Bootstrap on HTML
+8. For the side menu form, adjusted on HTML the menu to take 1/3 of the page, created the title "search for a city", created a form for the user to input the desired city and created a search button
+9. Also on the side menu form, created on HTML a list of buttons with previously searched cities, linked to the forecast of that city
+10. On the forecast box on the right side, ajusted forecast to take 2/3 of the page with Bootstrap classes added to HTML
+11. Added divs on HTML with dynamic parameters to today's forecast: city, date, image symbol of the weather, list with temp, wind and humidity
+12. Created IDs to link and display updated info after search
+13. Added dynamic parameters to 5-day forecast: date, image symbol of the weather, list with temp, wind and humidity
+14. Created variable on Javascript to store API key obtained from the openweathermap website
+15. Created variable on Javascript to store the name of the city searched
+16. Created variable on Javascript to store API URL with current weather with query parameters concatenated (var formSearch, var weatherApiKey)
+17. Created variable on Javascript to store API URL with 5-day forecast with query parameters concatenated (var formSearch, var weatherApiKey)
+18. Created fetch command on Javascript to test the API key with the current day weather
+19. Created a function on Javascript to link the data retrieved from current weather API to designated HTML elements
+20. Created fetch command on Javascript to test the API key with the 5 day forecast
+21. Created a function on Javascript to link the data retrieved from forecast weather API to designated HTML elements
+22. Created command on Javascript to run the function displayWeather when the user clicks on the search button
+23. Created variable empty array on Javascript to be filled with the searched city
+24. Created for loop on Javascript to append the search history to local storage
 
 
 ## Usage
