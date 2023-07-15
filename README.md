@@ -37,15 +37,13 @@ The objective of this project was to enhance my skills in JavaScript, Bootstrap,
 
 
 1. Open the following URL in the browser: https://virginiafreitas.github.io/weather-dashboard/
-<!-- IN PROGRESS -->
-<!-- 2. See that the third line of the header will be displaying the current date as MM-DD-YYYY.
-3. Choose one time of the day, between 9am and 5pm, to add new activities or remove existing activities.
-4. Activities can be typed inside the text area to the right side of the column with the hours of the day.
-5. If the time of the day has already passed, the background color of the area to type the activity should be gray.
-6. If the time of the day is the current time, the background color of the area to type the activity should be pink.
-If the time of the day is in the future, the background color of the area to type the activity should be dark blue.
-7. After adding or removing the activity, click on the black button to the right side, and it will be saved to the local storage.
-8. Refresh the page to verify that any change will remain in its designated area. -->
+2. Notice that the page has a section to display the weather today and the 5-day forecast, including temperature, wind speed and humidity, but that field is empty.
+3. To get to know the weather, choose a city you'd like to know the weather and input the name of the city inside the form that says "Ex: type 'New York'".
+4. She form is not case sensitive.
+5. Click the button "search" when ready.
+6. On the right side at the top the weather for the current day will be displayed, including the icon for that weather, the temperature, the wind speed and the humidity.
+7. Also on the right side, but at the bottom, the weather for the following 5 days will be displayed, one next to the other, including the icon for that weather, the temperature, the wind speed and the humidity.
+8. To search for a different city, simply type the name of the city inside the same form and click on the Search button.
 
 
 ![alt text](assets/images/screenshot1.png) 
@@ -53,10 +51,6 @@ If the time of the day is in the future, the background color of the area to typ
 ![alt text](assets/images/screenshot2.png) 
 
 ![alt text](assets/images/screenshot3.png) 
-
-![alt text](assets/images/screenshot4.png) 
-
-![alt text](assets/images/screenshot5.png) 
 
 
 
