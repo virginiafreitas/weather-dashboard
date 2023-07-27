@@ -1,7 +1,7 @@
-# weather-dashboard
+# Weather Dashboard
+  [![GitHub License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-
 
 The objective of this project was to enhance my skills in JavaScript, Bootstrap, APIs, and local storage. The goal of this project was to develop an intuitive application that allows users to search for any city and instantly retrieve the current weather conditions, along with a comprehensive 5-day weather forecast. With a focus on creating a user-friendly interface, the application will provide a seamless experience for users, enabling them to easily access and interpret weather information such as temperature, wind speed and humidity, in a visually appealing manner. By combining the power of JavaScript, Bootstrap's responsive design, and APIs for weather data retrieval, I have gained valuable hands-on experience in web development while delivering a practical and engaging application for users to stay informed about the weather.
 
